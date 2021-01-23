@@ -125,8 +125,6 @@ def minimax(board):
     """
     if not terminal(board):
         current_player = player(board)
-        if current_player is O:
-            print("O's turn")
         if current_player == X:
             v, action = max_value(board)
         else:
